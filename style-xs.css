@@ -1,0 +1,339 @@
+@media (max-width: 600px) {
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        box-sizing: border-box; 
+    }
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    main {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+        background: linear-gradient(90deg, rgba(0,72,87,1) 0%, rgba(87,199,133,1) 50%, rgba(237,221,83,1) 100%);
+        color: #fff;
+        padding: 15px 20px;
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* ===== Ícone do menu hambúrguer ===== */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .hamburger span {
+        background-color: #fff;
+        height: 3px;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+    /* ===== Menu ===== */
+    .menu {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 72, 87, 0.98);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        border-radius: 8px 0 0 8px;
+        padding: 20px 0;
+        margin: 0;
+        box-shadow: -2px 2px 10px rgba(0,0,0,0.3);
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+    }
+
+    .menu.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .menu li a:hover {
+        color: #ffeb3b;
+    }
+
+    /* ===== Animação do ícone ===== */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #e9ecef;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #007BFF;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .destaques, .about, .team, .faq, .contact {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ===== TIME / INTEGRANTES ===== */
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .member {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .faq h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .faq-item h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    /* ===== FORMULÁRIO ===== */
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+        color: #333;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+        margin: 6px 0 15px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+        min-height: 100px;
+        padding: 15px 20px;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(237,221,83,1) 0%, rgba(87,199,133,1) 50%, rgba(0,72,87,1) 100%);
+        color: #fff;
+        font-size: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ===== BENEFÍCIOS ===== */
+    .benefits {
+        padding: 40px 20px;
+        background-color: #f0f8ff;
+        text-align: center;
+    }
+
+    .benefits h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+        color: #004857;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        width: 90%;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #007BFF;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .partnership {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        color: #004857;
+    }
+
+    /* ===== ROADMAP & TECNOLOGIAS ===== */
+    .roadmap-tech {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #f5f5f5;
+    }
+
+    .roadmap-tech h1 {
+        font-size: 24px;
+        color: #007BFF;
+        margin-bottom: 30px;
+    }
+
+    .roadmap-tech h2 {
+        font-size: 20px;
+        color: #004857;
+        margin-bottom: 20px;
+    }
+
+    .roadmap-tech ul,
+    .roadmap-tech ol {
+        text-align: left;
+        margin: 0 auto 30px;
+        padding-left: 15px;
+    }
+
+    .roadmap-tech li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .benefits-tech {
+        background-color: #e0f7fa;
+        padding: 30px 20px;
+        border-radius: 12px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+}
