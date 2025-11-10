@@ -60,11 +60,10 @@ DeNovoNao/
 │   └─ Samuel_Keniti.jpg
 ├─ js/
 │   └─ script.js
+├─ FAQ.html
+├─ README.md
+├─ Roadmap.html
 ├─ contato.html
-├─ faq.html
 ├─ index.html
 ├─ integrantes.html
-├─ README.md
-├─ roadmap.html
 └─ sobre.html
-
