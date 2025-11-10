@@ -46,22 +46,25 @@ O foco desta Sprint 02 foi implementar **responsividade**, garantindo uma experi
 
 ---
 
-## Estrutura de Pastas do Projeto
-'''text
+## Estrutura de Pastas
+
+```text
+DeNovoNao/
 │
-├── css/
-│   └── style.css
-├── image/
-│   ├── DNN!.png
-│   ├── G_JESUS.jpeg
-│   ├── Siciliano.jpg
-│   └── Samuel_Keniti.jpg
-├── js/
-│   └── script.js
-├── index.html
-├── integrantes.html
-├── sobre.html
-├── faq.html
-├── contato.html
-├── roadmap.html
-└── README.md
+├─ css/
+│   └─ style.css
+├─ image/
+│   ├─ DNN!.png
+│   ├─ G_JESUS.jpeg
+│   ├─ Siciliano.jpg
+│   └─ Samuel_Keniti.jpg
+├─ js/
+│   └─ script.js
+├─ contato.html
+├─ faq.html
+├─ index.html
+├─ integrantes.html
+├─ README.md
+├─ roadmap.html
+└─ sobre.html
+
