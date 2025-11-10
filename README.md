@@ -47,7 +47,7 @@ O foco desta Sprint 02 foi implementar **responsividade**, garantindo uma experi
 ---
 
 ## Estrutura de Pastas do Projeto
-
+'''text
 │
 ├── css/
 │   └── style.css
